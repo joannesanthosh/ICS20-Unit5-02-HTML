@@ -9,22 +9,29 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit6-01-PWA/sw.js", {
-    scope: "/ICS20-Unit6-01-PWA/",
+  navigator.serviceWorker.register("/ICS20-Unit5-02-HTML/sw.js", {
+    scope: "/ICS20-Unit5-02-HTML/",
   })
 }
 
 /**
- * This function converts the degrees from fahrenheit to celsius
+ * This function updates the slider value.
  */
-function convert() {
-  // input
-  const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
-
-  // process
-  const celsius = ((fahrenheit - 32) * 5) / 9
-
-  // output
-  document.getElementById("celsius").innerHTML =
-    "<p>The  temperature in celsius is: " + celsius.toFixed(2) + "°<p>"
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
 }
+
+// this allows for console input in Node.js
+const prompt = require('prompt-sync')()
+
+// input
+const randomNumber = prompt("Enter a positive or negative number: ")
+
+// if ... then ... else example
+if (randomNumber > 0) {
+  console.log("Number is positive!")
+} else {
+  console.log("Number is negative.")
+}
+
+console.log("\nDone.")
