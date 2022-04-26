@@ -22,7 +22,7 @@ function updateSliderValue(valueFromSlider) {
 }
 
 // this allows for console input in Node.js
-const prompt = require('prompt-sync')()
+const prompt = require("prompt-sync")()
 
 // input
 const randomNumber = prompt("Enter a positive or negative number: ")
