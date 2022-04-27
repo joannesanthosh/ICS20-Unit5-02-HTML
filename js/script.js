@@ -15,7 +15,7 @@ if (navigator.serviceWorker) {
 }
 
 // input
-function myButtonClicked() {
+function convert() {
   const number = parseInt(document.getElementById("number").value)
 
   // process
