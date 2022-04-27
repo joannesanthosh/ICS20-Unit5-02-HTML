@@ -21,10 +21,17 @@ function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 }
 
+<<<<<<< HEAD
+=======
+// this allows for console input in Node.js
+const prompt = require("prompt-sync")()
+
+>>>>>>> origin/main
 // input
 function myButtonClicked() {
   const numberValue = parseInt(document.getElementById("numberValue").value);
 
+<<<<<<< HEAD
   // process
   if (numberValue < 0) {
     document.getElementById("answer").innerHTML = "The number is negative!";
@@ -32,3 +39,6 @@ function myButtonClicked() {
     document.getElementById("answer").innerHTML = "The number is positive!";
   }
 }
+=======
+console.log("\nDone.")
+>>>>>>> origin/main
