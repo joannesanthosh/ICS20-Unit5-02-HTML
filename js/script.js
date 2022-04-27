@@ -16,12 +16,12 @@ if (navigator.serviceWorker) {
 
 // input
 function myButtonClicked() {
-  const number = parseInt(document.getElementById("number").value);
+  const number = parseInt(document.getElementById("number").value)
 
-// process
+  // process
   if (number < 0) {
-    document.getElementById("answer").innerHTML = "The number is negative!";
+    document.getElementById("answer").innerHTML = "The number is negative!"
   } else {
-    document.getElementById("answer").innerHTML = "The number is positive!";
+    document.getElementById("answer").innerHTML = "The number is positive!"
   }
 }
