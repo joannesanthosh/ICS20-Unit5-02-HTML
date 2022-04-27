@@ -37,27 +37,22 @@
           <tr>
             <th>
               <h5>Choose a positive or negative number</h5>
-              <!-- Slider with Starting Value -->
-        <label>
-          Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="-6" max="6" value="" tabindex="0"
-          onchange = "updateSliderValue(this.value)">
-        </label>
+              <!-- Numeric Textfield -->
+              <form action="#">
+               <div class="mdl-textfield mdl-js-textfield">
+               <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number">
+               <label class="mdl-textfield__label" for="number">Enter here...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+        </form>
         <!-- Raised button with ripple -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="myButtonClicked()">
           Enter
         </button>
-              <br />
-              <p>
-               <div id="answer"></div>
-              </p>
-            </th>
-          </tr>          
-        </table>
+        <!-- basic text -->
+        <p></p>
+        <div id="answer"></div>
       </main>
     </div>
   </body>

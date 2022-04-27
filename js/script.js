@@ -14,31 +14,14 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function updates the slider value.
- */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
-
-<<<<<<< HEAD
-=======
-// this allows for console input in Node.js
-const prompt = require("prompt-sync")()
-
->>>>>>> origin/main
 // input
 function myButtonClicked() {
-  const numberValue = parseInt(document.getElementById("numberValue").value);
+  const number = parseInt(document.getElementById("number").value);
 
-<<<<<<< HEAD
-  // process
-  if (numberValue < 0) {
+// process
+  if (number < 0) {
     document.getElementById("answer").innerHTML = "The number is negative!";
   } else {
     document.getElementById("answer").innerHTML = "The number is positive!";
   }
 }
-=======
-console.log("\nDone.")
->>>>>>> origin/main
